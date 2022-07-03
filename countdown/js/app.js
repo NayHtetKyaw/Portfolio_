@@ -14,14 +14,14 @@
 
 const getDeadline = () => {
     const currentDate = new Date().getDate();
-    return new Date(`July ${currentDate+1}, 2022 00:00:00`);
+    return new Date(`July ${currentDate+11}, 2022 00:00:00`);
 };
 
-const date = document.querySelector('.date');
-date.innerHTML = getDeadline().getDate();
+// const date = document.querySelector('.date');
+// date.innerHTML = getDeadline().getDate();
 const app = document.querySelector('.countdown-timer');
 const message = document.querySelector('.message');
-const heading = document.querySelector('h3');
+const heading = document.querySelector('h1');
 
 const format = (t) => {
     return t < 10 ? '0' + t : t;
