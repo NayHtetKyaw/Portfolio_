@@ -1,16 +1,4 @@
-// const now = new Date();
-// // const time = now.getTime();
-// const day = new Date('July 03, 2022 10:00:00');
-// const start = new Date('July 04, 2020, 00:00:00');
-// const end = new Date('July 14, 2022 00:00:00');
-
-// const time = end.getTime() - start.getTime();
-// const time = 150000;
-// const minutes = Math.floor(time / 1000/ 60);
-// const seconds = Math.floor(time/ 1000) % 60;
-
-// console.log(time / 1000/ 60);
-// console.log(minutes, seconds);
+//after
 
 const getDeadline = () => {
     const currentDate = new Date().getDate();

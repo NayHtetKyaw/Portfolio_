@@ -6,6 +6,31 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
+body h1{
+    text-align: center;
+    color: white;
+}
+
+.countdown-timer{
+    color: white;
+    display:flex;
+    justify-content: center;
+}
+
+.countdown-timer .count-down{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.count-down .timer{
+    display: flex;
+    width: 100px;
+    margin: 10px;
+}
+
+
 .header{
     width: 100%;
     height: max-content;
