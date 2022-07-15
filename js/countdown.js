@@ -62,7 +62,7 @@ class countDown{
 
 const getDeadline = () => {
     const currentDate = new Date().getDate();
-    return new Date(`July 25, 2022 00:00:00`);
+    return new Date(`July 26, 2022 00:00:00`);
 };
 
 // const date = document.querySelector('.date');
