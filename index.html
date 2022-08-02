@@ -7,14 +7,33 @@
     <title>NayHtetKyaw</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="public/main.css" />
+    <link rel="stylesheet" href="public/loader.less" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     <script src="https://kit.fontawesome.com/55c4673143.js" crossorigin="anonymous"></script>
     <script src="public/js/contactform.js"></script>
+    <script src="public/js/loader.js"></script>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 </head>
-<body>
 
-    <!-- scripts -->
+<body onload="loadfun()">
+    
+        <!-- loader -->
+
+        <div class="loader-wrapper" id="loading">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            var load = document.getElementById("loading");
+            //         var load = document.getElementById("intro");
+    
+            function loadfun() {
+    
+                load.style.display = 'none';
+            }
+        </script>
+
+    <!-- data aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
