@@ -653,10 +653,10 @@ span:nth-child(5) {
   width: 40%;
   min-height: 280;
   margin: 0;
-  border:#27354A 1px solid;
+  /* border:#27354A 1px solid; */
   border-radius: 5%;
   min-width: 320px;
-  box-shadow: #424B54  17px 20px 11px 0px;
+  box-shadow: #474b4e 1px 5px 11px 0px;
 }
 
 .exp p{
@@ -671,9 +671,9 @@ span:nth-child(5) {
  min-width: 320px;
  margin: 0;
  min-height: 280;
- border:#27354A 1px solid;
+ /* border:#27354A 1px solid; */
  border-radius: 5%;
- box-shadow: #424B54  17px 20px 11px 0px;
+ box-shadow: #474b4e 1px 5px 11px 0px;
  padding: 5px;
 }
 
@@ -711,8 +711,8 @@ span:nth-child(5) {
 .about-section > div{
   min-width: 350px;
   min-height: 250px;
-  border: 1px solid #424B54;
-  box-shadow: #474b4e  17px 20px 11px 0px;
+  /* border: 1px solid #424B54; */
+  box-shadow: #474b4e 1px 5px 11px 0px;
   border-radius: 5%;
   margin-bottom: 30;
 }
