@@ -55,10 +55,10 @@ html, body{
   animation: fadeIn 5s;
 }
 
-.avatar :hover{
+/* .avatar :hover{
   background-image: url('../public/media/profile.jpg');
-  background-image: 100px;
-}
+  background-image: ;
+} */
 
 @keyframes fadeIn {
   0% { opacity: 0; }
