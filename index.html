@@ -1,3 +1,4 @@
+<!-- <?php include('public/js/mailer.php') ?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -168,7 +169,7 @@
                     <p>&#8226; Internship Working Experiences</p>
                 </div>
 
-                <div data-aos="fade-right" data-aos-duration="2000" class="learning">
+                <!-- <div data-aos="fade-right" data-aos-duration="2000" class="learning">
                     <h2>I am Learning</h2>
                     <div class="laravel">
                         <p>php Laveral </p> 
@@ -184,7 +185,7 @@
                         <p>Vue</p> 
                         <img title="VueJS" src="public/media/Vue-logo.png" />
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
@@ -239,21 +240,25 @@
         <div data-aos="fade-up" data-aos-duration="2000" class="contact-form">
             <section class="get-in-touch">
                 <h1 class="title">Contact ME</h1>
-                <form class="contact-form row">
+                <form class="contact-form row" method="post" action="public/php/mailer.php">
                    <div class="form-field col x-50">
-                      <input id="name" class="input-text js-input" type="text" required>
+                      <input id="name" class="input-text js-input" type="text" name="name" required>
                       <label class="label" for="name">Name</label>
                    </div>
                    <div class="form-field col x-50">
-                      <input id="email" class="input-text js-input" type="email" required>
+                      <input id="email" class="input-text js-input" type="email" name="email" required>
                       <label class="label" for="email">E-mail</label>
                    </div>
                    <div class="form-field col x-100">
-                      <input id="message" class="input-text js-input" type="text" required>
-                      <label class="label" for="message">Message</label>
+                      <input id="message" class="input-text js-input" type="text" name="subject" required>
+                      <label class="label" for="message">Subject</label>
+                   </div>
+                   <div class="form-field col x-100">
+                        <input id="message" class="input-text js-input" type="text" name="body" required>
+                        <label class="label" for="message">Message</label>
                    </div>
                    <div class="form-field col x-100 align-center">
-                      <input class="submit-btn" type="submit" value="Submit">
+                      <input class="submit-btn" type="submit" value="Submit" name="submit">
                    </div>
                 </form>
              </section> 
