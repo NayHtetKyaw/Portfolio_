@@ -1,5 +1,10 @@
 <?php 
 
+    $mail->isSMTP();
+    $mail->Host = 'https://nayhtetkyaw.ga';
+    $mail->SMTPAuth = true;
+    $mail = new PHPMailer(true);
+    
     if($_POST['submit']){
         $me = 'nayhtetkyaw.dev@gmail.com';
         $sender_email = $_POST['email'];
@@ -14,7 +19,7 @@
         mail($me, $subject,
         $body.$sender_email);
         echo '<script>alert("Message has been sent")</script>';
-         echo '<script>window.location.href = "https://nayhtetkyaw.ga/"</script>;';    
+        echo '<script>window.location.href = "https://nayhtetkyaw.ga/"</script>;';    
     } catch (Exception $e) {
         echo $e->ErrorInfo;
         echo '<script>alert("Message could not be sent. Mailer Error: {$mail->ErrorInfo}")</script>';
